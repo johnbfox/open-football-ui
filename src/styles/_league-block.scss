@@ -1,0 +1,43 @@
+$league-block: '.league-block';
+$league-blocks: '.league-blocks';
+
+#{$league-blocks}{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#{$league-block}{
+  width: 200px;
+  height: 180px;
+  margin-right:12px;
+  display:flex;
+  margin-bottom: 12px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #FFFFFF;
+  box-shadow: 0 4px 2px -4px #888888;
+  padding: 24px 12px;
+
+  &__wrapper{
+
+  }
+
+  &__logo{
+    max-height: 60%;
+  }
+
+  &__title{
+    margin-top: 24px;
+  }
+
+  &:hover{
+    cursor: pointer;
+    background: #F8F8F8;
+    box-shadow: none;
+  }
+
+}

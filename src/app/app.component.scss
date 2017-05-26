@@ -1,0 +1,38 @@
+$page-content: '.page-content';
+
+#{$page-content}{
+  flex: 1;
+  justify-content: 'space-between';
+  background-color: #E8E8EE;
+  padding:12px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+$header: '.header';
+
+#{$header}{
+  padding: 12px 24px 12px 24px;
+  background: #2e2e2e;
+}
+
+.header__search-bar{
+  display: block;
+  float: right;
+}
+
+$footer: '.footer';
+
+#{$footer}{
+  height: 32px;
+  background: #778899;
+  color:#f9f9f9;
+  padding: 6px 12px;
+}
+
+$league-block: '.league-block';
+
+#{$league-block}{
+
+}

@@ -1,0 +1,26 @@
+<table class="league-table" *ngIf="table">
+  <thead>
+    <th>Position</th>
+    <th>Team</th>
+    <th>GP</th>
+    <th>P</th>
+    <th>W</th>
+    <th>L</th>
+    <th>GF</th>
+    <th>GA</th>
+    <th>Dif</th>
+  </thead>
+  <tbody>
+    <tr class="league-table__row" *ngFor="let row of table.standing">
+      <td class="league-table__c">{{row.position}}</td>
+      <td class="league-table__c">{{row.teamName}}</td>
+      <td class="league-table__c">{{row.playedGames}}</td>
+      <td class="league-table__c">{{row.points}}</td>
+      <td class="league-table__c">{{row.wins}}</td>
+      <td class="league-table__c">{{row.losses}}</td>
+      <td class="league-table__c">{{row.goals}}</td>
+      <td class="league-table__c">{{row.goalsAgainst}}</td>
+      <td class="league-table__c">{{row.goalDifference}}</td>
+    </tr>
+  </tbody>
+</table>

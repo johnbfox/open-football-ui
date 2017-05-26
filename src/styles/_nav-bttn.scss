@@ -1,0 +1,14 @@
+$nav-bttn:'.nav-bttn';
+
+#{$nav-bttn}{
+  padding: 9px 12px;
+  background: none;
+  border-radius: 2px;
+  border: 1px solid grey;
+  margin-left: 6px;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #FAFAFA;
+  }
+}

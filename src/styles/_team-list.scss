@@ -1,0 +1,41 @@
+$team-list: '.team-list';
+
+#{$team-list}{
+  max-width: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1 1 auto;
+  max-height: 500px;
+
+  &__block{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-top: 1px solid #696969;
+
+    &:hover{
+      cursor: pointer;
+      background-color: #E8E8EE;
+    }
+
+    &--active{
+      background-color: #d3d3d3;
+
+      &:hover{
+        background-color: #d3d3d3;
+      }
+    }
+  }
+
+  &__block,
+  &__icon,
+  &__team{
+    display: block;
+    float: left;
+  }
+
+  &__team{
+    margin-left:12px;
+    margin-top: 1px;
+  }
+}

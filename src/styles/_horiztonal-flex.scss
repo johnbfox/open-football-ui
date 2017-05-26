@@ -1,0 +1,6 @@
+$horiztonal-flex: '.horiztonal-flex';
+
+#{$horiztonal-flex}{
+  display: flex;
+  flex-direction: row;
+}

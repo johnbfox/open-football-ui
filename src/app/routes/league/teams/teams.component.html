@@ -1,0 +1,23 @@
+<div class="horiztonal-flex">
+  <div class="team-list">
+    <app-team-block *ngFor="let team of teamBlocks" [model]="team" (clicked)="teamSelected($event)"></app-team-block>
+  </div>
+  <div class="team-detail">
+    <app-loading-layer></app-loading-layer>
+    <div *ngIf="selectedTeam" style="z-index:0">
+      <div class="team-detail__header">
+        <div class="team-detail__header--left">
+          <h3>{{selectedTeam.name}}</h3>
+        </div>
+        <div class="team-detail__header--right">
+          <button class="nav-bttn" (click)="showPlayers()">Players</button>
+          <button class="nav-bttn" (click)="showCharts()">Charts</button>
+        </div>
+      </div>
+      <app-roster-table [players]="selectedPlayers" *ngIf="arePlayersShowing">
+      </app-roster-table>
+      <app-team-charts [players]="selectedPlayers" *ngIf="areChartsShowing">
+      </app-team-charts>
+    </div>
+  </div>
+</div>

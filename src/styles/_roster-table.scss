@@ -1,0 +1,27 @@
+$roster-table: '.roster-table';
+
+#{$roster-table}{
+  width: 100%;
+  border-collapse: collapse;
+  
+  &__header{
+
+    & > th{
+      text-align: left;
+    }
+  }
+
+  &__r:hover{
+    background: #E8E8EE;
+  }
+
+  &__group{
+    background-color: #98FB98;
+    padding: 6px;
+  }
+
+  &__c{
+    padding:3px;
+    border: none;
+  }
+}

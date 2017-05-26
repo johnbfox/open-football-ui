@@ -1,0 +1,7 @@
+<ul class="nav-tabs">
+  <li *ngFor="let tab of tabs"
+      [ngClass]="{'nav-tabs__tab': !tab.active, 'nav-tabs__tab--active': tab.active}"
+      (click)="click(tab)">
+    {{tab.name}}
+  </li>
+</ul>

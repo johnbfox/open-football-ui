@@ -1,0 +1,17 @@
+<h2 class="page-title">Leagues</h2>
+<div class="league-blocks">
+  <app-league-block *ngFor="let league of leagueBlocks"
+                    [model]="league"
+                    (clicked)="onClicked($event)"
+                    name="{{league.caption}}">
+  </app-league-block>
+</div>
+
+<h2 class="page-title">Tournaments</h2>
+<div class="league-blocks">
+  <app-league-block *ngFor="let tourney of tourneyBlocks"
+                    [model]="tourney"
+                    (clicked)="onClicked($event)"
+                    name="{{tourney.caption}}">
+  </app-league-block>
+</div>

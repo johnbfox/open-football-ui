@@ -1,0 +1,11 @@
+$card: '.card';
+
+#{$card}{
+  padding: 12px 24px;
+  background: #FFFFFF;
+  min-height: min-content;
+  flex: 1;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}

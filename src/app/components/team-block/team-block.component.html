@@ -1,0 +1,8 @@
+<div [ngClass]="{'team-list__block':true, 'team-list__block--active': model.active }" (click)="blockClicked()">
+  <div class="team-list__icon">
+    <img src="{{model.team.crestUrl}}" style="max-width:25px; max-height:25px"/>
+  </div>
+  <div class="team-list__team">
+    {{model.team.name}}
+  </div>
+</div>
